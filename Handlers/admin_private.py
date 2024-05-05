@@ -1,3 +1,4 @@
+# Здесь собираем админку
 from aiogram import Bot, Router, F, types
 from aiogram.filters import Command, Filter
 import aiosqlite
