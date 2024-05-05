@@ -20,7 +20,7 @@ load_dotenv(find_dotenv())                        # Находим .env
 dp = Dispatcher()
 dp.include_routers(user_private_router, admin_private_router)
 nest_asyncio.apply()
-bot = Bot(token=os.getenv('TOKEN'))             # Подставляем значение TOKEN из .env
+bot = Bot(token=os.getenv('TOKEN'))             # Подставляем значение из .env
 
 
 @dp.message(Command('start'))
